@@ -10,13 +10,13 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class ConfigAPI {
+public class BungeeConfigAPI {
 
     private final Plugin plugin;
     private Configuration configuration;
     private File file;
 
-    public ConfigAPI(Plugin plugin, String configName) {
+    public BungeeConfigAPI(Plugin plugin, String configName) {
         this.plugin = plugin;
         var configFile = new File(plugin.getDataFolder(), configName);
         if (!configFile.exists()) {
